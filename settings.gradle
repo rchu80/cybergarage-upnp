@@ -1,0 +1,6 @@
+rootProject.name = 'cybergarage-upnp'
+include ':cybergarage-upnp-core'
+include ':cyber-media-garage'
+
+project(':cybergarage-upnp-core').projectDir = "$rootDir/core" as File
+project(':cyber-media-garage').projectDir = "$rootDir/std" as File
