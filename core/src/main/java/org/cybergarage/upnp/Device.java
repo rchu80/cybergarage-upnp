@@ -266,22 +266,6 @@ public class Device implements org.cybergarage.http.HTTPRequestListener,
 
 		if ((baseURLStr == null) || (baseURLStr.length() <= 0)) {
 			if ((locationURLStr != null) && (0 < locationURLStr.length())) {
-				if (!locationURLStr.endsWith("/") || !urlString.startsWith("/")) {
-					String absUrl = locationURLStr + urlString;
-					try {
-						URL url = new URL(absUrl);
-						return url.toString();
-					} catch (Exception e) {
-					}
-				} else {
-					String absUrl = locationURLStr + urlString.substring(1);
-					try {
-						URL url = new URL(absUrl);
-						return url.toString();
-					} catch (Exception e) {
-					}
-				}
-
 				String absUrl = HTTP.getAbsoluteURL(locationURLStr, urlString);
 				try {
 					URL url = new URL(absUrl);
