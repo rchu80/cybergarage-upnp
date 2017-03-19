@@ -108,6 +108,11 @@ public class AVTransport implements ActionListener, QueryListener
 
 	public final static String STOPPED = "STOPPED";
 	public final static String PLAYING = "PLAYING";
+	public final static String TRANSITIONING = "TRANSITIONING";
+	public final static String PAUSED_PLAYBACK = "PAUSED_PLAYBACK";
+	public final static String PAUSED_RECORDING = "PAUSED_RECORDING";
+	public final static String RECORDING = "RECORDING";
+	public final static String NO_MEDIA_PRESENT = "NO_MEDIA_PRESENT";
 	public final static String OK = "OK";
 	public final static String ERROR_OCCURRED = "ERROR_OCCURRED";
 	public final static String NORMAL = "NORMAL";
